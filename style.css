@@ -59,6 +59,7 @@ ul {
     width: 100%;
     height: auto;
     object-fit: cover;
+    vertical-align: middle;
   }
 
   .img {
@@ -72,7 +73,12 @@ ul {
   .container {
     position: relative;
   }
-  
+
+  .column {
+    width: 25%;
+    display: flex;
+  }
+
   
   .overlay {
     position: absolute; 
@@ -110,6 +116,9 @@ table {
 }
 
 /*Chuyển ảnh tự động*/
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -128,18 +137,6 @@ table {
   text-align: center;
 }
 
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
 .active {
   background-color: #717171;
 }
@@ -155,11 +152,6 @@ table {
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
 /*Links*/
 .links {
   text-decoration: none;
@@ -171,3 +163,4 @@ table {
   text-decoration: underline;
   background-color: #eee;
 }
+
