@@ -105,6 +105,8 @@ footer {
 /*Table*/
 table {
   background-color: #eee;
+  margin: 0;
+  padding: 0;
 }
 
 /*Chuyển ảnh tự động*/
