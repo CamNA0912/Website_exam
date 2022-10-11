@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gund-Arm</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2da725f4a5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <ul>
@@ -21,18 +22,109 @@
             </div>
           </li>
     </ul>
-    <div>
-      <h3>LIÊN HỆ</h3>
-      <p>FACEBOOK</p>
-      <p>INSTAGRAM</p>
-      <p>GOOGLE</p>
 
-      <h3>THÔNG TIN LIÊN HỆ</h3>
-      <p>Lý Nhật Ân</p>
-      <p>CD419CNTT</p>
-      <p>0990099009</p>
-      <p>gund-arm@gmail.com</p>
+    <div>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="png/sinanju4_cleanup.jpg" alt="Sinanju" style="height:100%">
+          <div class="text">Sinanju</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="png/unicorn4.png" alt="unicorn2" style="height:100%">
+          <div class="text">Unicorn</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="png/unicorn5.jpg" alt="unicorn3" style="height:100%">
+          <div class="text">Unicorn ("Awakened" Destroy Mode)</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="png/barbatos5.jpg" alt="unicorn3" style="height:100%">
+          <div class="text">Barbatos</div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+      <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Chuyển ảnh mỗi 2 giây
+        }
+        </script>
+
     </div>
+
+    <!--Thông tin-->
+    <div>
+      <table style="width:100%">
+        <td>
+          <h3>LIÊN HỆ</h3>
+          <p>
+            <i class="fa-brands fa-facebook"></i>
+            FACEBOOK
+          </p>
+          <p>
+            <i class="fa-brands fa-github"></i>
+            GITHUB
+          </p>
+          <p>
+            <i class="fa-brands fa-google"></i>
+            GOOGLE
+          </p>
+        </td>
+        <td>
+          <h3>THÔNG TIN LIÊN HỆ</h3>
+          <p>
+            <i class="fa-sharp fa-solid fa-hand-scissors"></i>
+            Lý Nhật Ân
+          </p>
+          <p>
+            <i class="fa-sharp fa-solid fa-pen"></i>
+            CD419CNTT
+          </p>
+          <p>
+            <i class="fa-sharp fa-solid fa-phone"></i>
+            0990099009
+          </p>
+          <p>
+            <i class="fa-sharp fa-solid fa-envelope"></i>
+            gund-arm@gmail.com
+          </p>
+        </td>
+    </div>
+    
+ 
+ 
 
 </body>
 </html>
