@@ -159,3 +159,15 @@ table {
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+/*Links*/
+.links {
+  text-decoration: none;
+  color:rgba(70, 101, 255, 0.934);
+  
+}
+
+.links:hover {
+  text-decoration: underline;
+  background-color: #eee;
+}
